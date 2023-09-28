@@ -1,0 +1,23 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name text, quantity INTEGER, price INTEGER, category text);
+
+INSERT INTO clothing VALUES(1, "Kelly Shirt", 10, 20, "Top");
+INSERT INTO clothing VALUES(2, "Charlotte Jean", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(3, "Jennie Skirt", 40, 35, "Bottom");
+INSERT INTO clothing VALUES(4, "Koya Shorts", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(5, "Minnie Tank", 100, 40, "Top");
+INSERT INTO clothing VALUES(6, "Rose Mini", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(7, "Lisa Jean", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(8, "Sakura Shirt", 100, 40, "Top");
+INSERT INTO clothing VALUES(9, "Flower Jean", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(10, "Daisy Mini", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(11, "Strawberry Pant", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(12, "Mint Shirt", 100, 40, "Top");
+INSERT INTO clothing VALUES(13, "Berry Skirt", 100, 40, "Bottom");
+INSERT INTO clothing VALUES(14, "Spring Shirt", 100, 40, "Top");
+INSERT INTO clothing VALUES(15, "Lavender Pant", 100, 40, "Bottom");
+
+SELECT *  
+FROM clothing
+ORDER BY price;
+
+SELECT SUM(quantity) FROM clothing
