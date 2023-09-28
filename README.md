@@ -1,2 +1,2 @@
-# sql
-All my SQL projects
+# SQLPorfolio
+This is my SQL Porfolio
