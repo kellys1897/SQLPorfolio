@@ -1,0 +1,44 @@
+CREATE TABLE artists (id integer PRIMARY KEY,
+    name TEXT,
+    age INTEGER,
+    hometown TEXT);
+
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Taylor Swift", 33, "Reading");
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Billie Eilish", 21, "Los Angeles");
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Bad Bunny", 29, "Vega Baja");
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Rosalia", 31, "Barcelona");
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Ice Spice", 32, "New York");
+INSERT INTO artists (name, age, hometown)
+    VALUES ("Zayn", 30, "Bradford");
+    
+CREATE TABLE albums (id integer PRIMARY KEY,
+    name TEXT,
+    year INTEGER);
+    
+INSERT INTO albums (name,year)
+    VALUES ("Midnights", 2022);
+INSERT INTO albums (name,year)
+    VALUES ("Happier Than Ever", 2021);
+INSERT INTO albums (name,year)
+    VALUES ("EL ULTIMO TOUR DEL MUNDO", 2020);
+INSERT INTO albums (name,year)
+    VALUES ("MOTOMAMI", 2022);
+INSERT INTO albums (name,year)
+    VALUES ("Like..?", 2023);
+INSERT INTO albums (name,year)
+    VALUES ("Nobody is Listening", 2021);
+
+CREATE TABLE tours (id integer PRIMARY KEY,
+    name TEXT,
+    year INTEGER);
+INSERT INTO tours (name,year)
+    VALUES ("Eras Tour", 2023);
+INSERT INTO tours (name,year)
+    VALUES ("Happier Than Ever", 2022);INSERT INTO tours (name,year)
+    VALUES ("World's Hottest Tour", 2022);
+
