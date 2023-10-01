@@ -18,27 +18,35 @@ INSERT INTO artists (name, age, hometown)
     
 CREATE TABLE albums (id integer PRIMARY KEY,
     name TEXT,
-    year INTEGER);
+    year INTEGER,
+    artist_id INTEGER);
     
-INSERT INTO albums (name,year)
-    VALUES ("Midnights", 2022);
-INSERT INTO albums (name,year)
-    VALUES ("Happier Than Ever", 2021);
-INSERT INTO albums (name,year)
-    VALUES ("EL ULTIMO TOUR DEL MUNDO", 2020);
-INSERT INTO albums (name,year)
-    VALUES ("MOTOMAMI", 2022);
-INSERT INTO albums (name,year)
-    VALUES ("Like..?", 2023);
-INSERT INTO albums (name,year)
-    VALUES ("Nobody is Listening", 2021);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("Midnights", 2022, 1);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("Happier Than Ever", 2021, 2);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("EL ULTIMO TOUR DEL MUNDO", 2020, 3);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("MOTOMAMI", 2022, 4);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("Like..?", 2023, 5);
+INSERT INTO albums (name,year,artist_id)
+    VALUES ("Nobody is Listening", 2021, 6);
 
 CREATE TABLE tours (id integer PRIMARY KEY,
     name TEXT,
-    year INTEGER);
-INSERT INTO tours (name,year)
-    VALUES ("Eras Tour", 2023);
-INSERT INTO tours (name,year)
-    VALUES ("Happier Than Ever", 2022);INSERT INTO tours (name,year)
-    VALUES ("World's Hottest Tour", 2022);
+    year INTEGER,
+    artist_id INTEGER);
+    
+INSERT INTO tours (name,year, artist_id)
+    VALUES ("Eras Tour", 2023, 1);
+INSERT INTO tours (name,year, artist_id)
+    VALUES ("Happier Than Ever", 2022, 2);
+INSERT INTO tours (name,year, artist_id)
+    VALUES ("World's Hottest Tour", 2022,3);
 
+SELECT artists.name, albums.name
+FROM artists
+JOIN albums
+ON artists.id = albums.artist_id
