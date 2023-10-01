@@ -49,4 +49,10 @@ INSERT INTO tours (name,year, artist_id)
 SELECT artists.name, albums.name
 FROM artists
 JOIN albums
-ON artists.id = albums.artist_id
+ON artists.id = albums.artist_id;
+
+SELECT artists.name, tours.name
+FROM artists
+LEFT OUTER JOIN tours
+ON artists.id = tours.artist_id;
+
