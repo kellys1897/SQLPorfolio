@@ -1,0 +1,21 @@
+CREATE TABLE skincare (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    brand TEXT,
+    product TEXT);
+    
+INSERT INTO skincare (brand, product)
+    VALUES ("Anua", "Heartleaf toner");
+INSERT INTO skincare (brand, product)
+    VALUES ("Bioderma", "Sensibio Micellar Water");
+INSERT INTO skincare (brand, product)
+    VALUES ("Be Plain", "Greenful Cleanser");
+
+SELECT * from skincare;
+
+UPDATE skincare SET product = "Greenful pH- Balanced Cleansing Foam" where id=3;
+
+SELECT * from skincare;
+
+DELETE from skincare where id=1;
+
+SELECT * from skincare;
